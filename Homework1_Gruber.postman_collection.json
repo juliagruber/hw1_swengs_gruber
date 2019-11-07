@@ -1,0 +1,311 @@
+{
+	"info": {
+		"_postman_id": "bf596865-5f41-46e7-8ab8-086575b3c3c6",
+		"name": "Homework1_Gruber",
+		"description": "Test Scripts Homework 1 Gruber",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8000/plants/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/plants",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"plants"
+					]
+				},
+				"description": "list all plants"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/gardens/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/gardens",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"gardens"
+					]
+				},
+				"description": "list all gardens"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/gardens/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"name\": \"Mamas Garten\",\r\n        \"size\": 5,\r\n        \"location\": \"Göriach\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/gardens/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"gardens",
+						""
+					]
+				},
+				"description": "add new garden"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/plants/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Tomato\",\r\n        \"color\": \"red\",\r\n        \"garden\": 1,\r\n        \"seeded_at\": \"2019-11-07\",\r\n        \"regional\": true,\r\n        \"type\": \"ve\",\r\n        \"quantity\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/plants/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"plants",
+						""
+					]
+				},
+				"description": "add new plants"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/plant/1/",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Tomato\",\r\n        \"color\": \"red\",\r\n        \"garden\": 1,\r\n        \"seeded_at\": \"2019-11-07\",\r\n        \"regional\": true,\r\n        \"type\": \"ve\",\r\n        \"quantity\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/plant/1/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"plant",
+						"1",
+						""
+					]
+				},
+				"description": "delete plant with pk 1"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/garden/1/",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Tomato\",\r\n        \"color\": \"red\",\r\n        \"garden\": 1,\r\n        \"seeded_at\": \"2019-11-07\",\r\n        \"regional\": true,\r\n        \"type\": \"ve\",\r\n        \"quantity\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/garden/1/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"garden",
+						"1",
+						""
+					]
+				},
+				"description": "delete garden with pk 1"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/plant/1/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/plant/1/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"plant",
+						"1",
+						""
+					]
+				},
+				"description": "view plant 1"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/garden/1/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/garden/1/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"garden",
+						"1",
+						""
+					]
+				},
+				"description": "view garden 1"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/garden/1/",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Omas Garten\",\r\n    \"size\": 15,\r\n    \"location\": \"Göriach\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/garden/1/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"garden",
+						"1",
+						""
+					]
+				},
+				"description": "update garden 1"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/plant/1/",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Carrot\",\r\n    \"color\": \"orange\",\r\n    \"garden\": 1,\r\n    \"seeded_at\": \"2019-11-07\",\r\n    \"regional\": true,\r\n    \"type\": \"ve\",\r\n    \"quantity\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/plant/1/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"plant",
+						"1",
+						""
+					]
+				},
+				"description": "update plant 1"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
